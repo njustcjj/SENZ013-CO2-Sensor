@@ -1,35 +1,35 @@
-# SENZ013-CO<sub>2</sub>-Sensor
+# SENZ013 CO<SUB>2</SUB>传感器
 
-###### Translation
+###### 翻译
 
-> For `English`, please click [`here.`](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/README.md)
+> `英文` 请参考 [`这里`](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/README.md)
 
-> For `Chinese`, please click [`here.`](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/README_CN.md)
+> `中文` 请参考 [`这里`](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/README_CN.md)
 
 ![](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/pic/SENZ013.jpg "SENZ013")
+ 
+
+### 产品介绍
+
+> SENZ013 CO2传感器具有双路信号输出，模拟量信号和TTL信号。当CO2浓度增高，探头输出的模拟电压值就越高。
+用户还可以用板子上的电位器直接设置阈值，当CO2浓度高达一定程度时，探头旁边的针头会输出低电平信号。
+
+> 该模块采用工业级的MG-811 CO2探头，对CO2极为敏感，同时还能排除酒精和CO的干扰。该探头对环境温湿度的依赖小，性能稳定，快速恢复响应。模块还带有温度补偿设计和信号放大电路，进一步提高准确度和灵敏度。
+
+> 用途：家庭CO2浓度监控及报警
+
+### 产品参数
+
+- 工作电压：+ 6V
+- 工作电流：<10mA
+- 工作功耗：1200mW
+- 尺寸：32 x 22 x 30mm
+- 充分预热：24h
 
 
-### Introduction
+### 使用教程
 
->  SENZ013 CO2 sensor has twin channel output, analog and TTL signal. The analog output voltage of the module increases as the concentration of the CO2 increases. The potentiometer onboard is designed to set the threshold of voltage. Once the CO2 concentration is high enough (voltage is higher than threshold), a digital signal (low) will be released.
-
->It has MG-811 gas sensor onboard which is highly sensitive to CO2 and less sensitive to alcohol and CO, Low humidity&temperature dependency. All components have industrial quality which means stability and reproducibility. This sensor also has an onboard conditioning circuit for amplifying output signal and temperature compensation circuit to get high accurate data.
->
-> Usage : Alarm and monitor the CO<sub>2</sub> concentration in home.
-
-
-### Specification
-
-- Operating voltage: +6V
-- Operating current: <10mA
-- Operating power dissipation: 1200mW
-- Size:32 x 22 x 30 mm
-- Complete preheat: 24h
-
-
-### Tutorial
-
-#### Wire Definition
+#### 引脚定义
 
 |Sensor pin|Ardunio Pin|Function Description|
 |-|:-:|-|
@@ -39,14 +39,16 @@
 |Aout|Analog pin|Analog signal output|
 |Tcm|Analog pin|Temperature compensation output|
 
-![](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/pic/SENZ013_pin.jpg "Pin Definition") 
 
-#### Connecting Diagram
+![](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/pic/SENZ013_pin.jpg "引脚定义") 
 
-![](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/pic/SENZ013_connect.png "Connecting Diagram") 
 
-#### Sample Code
+#### 连线图
 
+![](https://github.com/njustcjj/SENZ013-CO2-Sensor/blob/master/pic/SENZ013_connect.png "连线图") 
+
+
+### 示例代码
 
 	/************************Hardware Related Macros************************************/
 	#define         MG_PIN                       (A0)     //define which analog input channel you are going to use
@@ -149,4 +151,4 @@
 	}
 
 
-### Purchasing [*SENZ013 CO2 Sensor*](https://www.ebay.com/).
+### 购买[*SENZ013 CO<SUB>2</SUB>传感器*](https://www.ebay.com/).
